@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>כתיבת עבודות אקדמיות - רטצר</title>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Heebo', Arial, sans-serif;
@@ -40,6 +40,12 @@
             text-align: center;
             margin-bottom: 30px;
         }
+        .highlight-text {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #2c3e50;
+        }
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -66,8 +72,8 @@
             margin-bottom: 15px;
         }
         .cta {
-            background-color: #2c3e50;
-            color: white;
+            background-color: #f8f9fa;
+            color: #333;
             padding: 20px;
             text-align: center;
             margin: 30px 0;
@@ -85,28 +91,12 @@
         .cta a:hover {
             background-color: #2980b9;
         }
-        .contact-form form {
+        .cta-buttons {
             display: flex;
-            flex-direction: column;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        input, button {
-            margin-bottom: 15px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1em;
-        }
-        button {
-            background-color: #003366;
-            color: white;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        button:hover {
-            background-color: #004080;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
         }
         footer {
             margin-top: 50px;
@@ -115,6 +105,32 @@
             color: #666;
             border-top: 1px solid #ddd;
             padding-top: 20px;
+        }
+        .linkedin-icon {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        .about-us {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+        .about-us h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .about-us p {
+            margin-bottom: 20px;
+        }
+        .cta a .arabic {
+            display: block;
+            font-size: 0.9em;
+            color: #f8f9fa;
+            font-weight: normal;
         }
     </style>
     <script src="https://unpkg.com/lucide@0.119.0/dist/umd/lucide.min.js"></script>
@@ -126,8 +142,7 @@
         <img src="matan.jpg" alt="תמונה של מתן">
         <img src="danny.jpg" alt="תמונה של דני">
         <h1>כתיבת עבודות אקדמיות בהתאמה אישית</h1>
-        <h2>מומחים מהתעשייה ומהאקדמיה - מתן ודני רטצר</h2>
-        <p>התחייבות לשירות משותף ומלא של שנינו לאורך כל התהליך!</p>
+        <p class="highlight-text">התחייבות לשירות משותף ומלא של שנינו לאורך כל התהליך!</p>
     </header>
 
     <!-- תוכן -->
@@ -173,18 +188,28 @@
         <!-- קריאה לפעולה -->
         <section class="cta">
             <h2>מתחילים? בואו נדבר!</h2>
-            <a href="mailto:retzermatan@gmail.com">לחצו כאן לשליחת מייל 📧</a>
+            <div class="cta-buttons">
+                <a href="mailto:retzermatan@gmail.com">
+                    לחצו כאן לשליחת מייל 📧
+                    <span class="arabic">اضغط هنا لإرسال بريد إلكتروني</span>
+                </a>
+                <a href="tel:0524538121">
+                    לחצו כאן להתקשרות 📞
+                    <span class="arabic">اضغط هنا للاتصال</span>
+                </a>
+            </div>
         </section>
 
-        <!-- טופס יצירת קשר -->
-        <section class="contact-form">
-            <h2>צור קשר</h2>
-            <form>
-                <input type="text" name="name" placeholder="שם מלא" required />
-                <input type="email" name="email" placeholder="אימייל" required />
-                <input type="tel" name="phone" placeholder="טלפון" required />
-                <button type="submit">שלח</button>
-            </form>
+        <!-- תיאור אישי של מתן ודני -->
+        <section class="about-us">
+            <h2>מי אנחנו</h2>
+            <h3>על מתן</h3>
+            <p>אני מתן, מדען נתונים בכיר עם ניסיון רחב בכלי AI, למידת מכונה, ניתוח נתונים וכלי BI. פיתחתי מודלים של למידת מכונה ושימוש בכלי BI כגון PBI ו-Tableau. כמורה בקורס אנליסטים בג'ון ברייס, אני מצטיין בהוראה והעצמת עובדים.</p>
+            <p><strong>השירות שלי:</strong> ייעוץ והדרכה מותאמים אישית, יצירת ערך משמעותי לעסק, תמיכה מתמשכת לאחר הטמעה.</p>
+
+            <h3>על דני</h3>
+            <p>דניאל רטצ'ר, רו"ח ו-MBA, מומחה לחשבונאות ופיננסים, בעל ניסיון עשיר של מעל 10 שנים בהוראה וייעוץ עסקי.</p>
+            <p><strong>השירות שלי:</strong> ליווי מקצועי בכתיבת עבודות אקדמיות, הכנה למבחנים, וייעוץ פיננסי מותאם אישית.</p>
         </section>
     </div>
 
@@ -194,10 +219,14 @@
             <p>
                 <a href="tel:0543216332">📞 דני: 054-3216332</a> |
                 <a href="tel:0524538121">📞 מתן: 052-4538121</a>
+                <span class="arabic">اتصل بـ داني: 054-3216332 | اتصل بـ متان: 052-4538121</span>
             </p>
-            <p>✉️ <a href="mailto:retzermatan@gmail.com">שלחו לנו מייל</a></p>
-            <p>🔗 <a href="https://linkedin.com/in/matan-retzer-565b2332" target="_blank">מתן בלינקדאין</a> | <a href="https://linkedin.com/in/danny-ratzer-cpafinance" target="_blank">דני בלינקדאין</a></p>
-            <p style="color: green;">لطلاب المجتمع العربي - الرجاء التواصل معنا</p>
+            <p>✉️ <a href="mailto:retzermatan@gmail.com">שלחו לנו מייל</a> | <span class="arabic">ارسل لنا بريد إلكتروني</span></p>
+            <p>🔗 <a href="https://linkedin.com/in/matan-retzer-565b2332" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn Icon" class="linkedin-icon"> מתן בלינקדאין</a> |
+                <a href="https://linkedin.com/in/danny-ratzer-cpafinance" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn Icon" class="linkedin-icon"> דני בלינקדאין</a>
+            </p>
         </div>
         <p>&copy; 2024 כתיבת עבודות אקדמיות - רטצר</p>
     </footer>
