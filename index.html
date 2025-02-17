@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="כתיבת עבודות אקדמיות בהתאמה אישית עם תמיכה בבינה מלאכותית, שירות מקצועי ועמידה בלוחות זמנים.">
     <title>כתיבת עבודות אקדמיות - רטצר</title>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -32,6 +34,7 @@
             width: calc(439px / 2); /* 50% of the original width */
 			height: calc(557px / 2); /* 50% of the original height */
 			border: 3px solid #000; /* 3px solid black border */
+			max-width: 100%;
         }
         h1 {
             color: #003366;
@@ -152,9 +155,14 @@
 
     <!-- כותרת עליונה -->
     <header>
-        <img src="logo.jpg" alt="לוגו של העסק">
+		<img src="logo.jpg" alt="לוגו של העסק - כתיבת עבודות אקדמיות">
         <h1>כתיבת עבודות אקדמיות בהתאמה אישית</h1>
         <p class="highlight-text">הצלחה אקדמית עם בינה מלאכותית – התחייבות לשירות צמוד ומלא איתך עד ההגשה!</p>
+		<a href="#cta">
+            <button style="background-color: #3498db; color: white; padding: 15px 32px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer;">
+                ליצירת קשר
+            </button>
+        </a>
     </header>
 
     <!-- תוכן -->
@@ -206,7 +214,7 @@
         </section>
 
         <!-- קריאה לפעולה -->
-        <section class="cta">
+        <section id="cta" class="cta">
             <h2>מעוניינים? בואו נדבר!</h2>
             <div class="cta-buttons">
                 <a href="mailto:retzermatan@gmail.com">
@@ -216,7 +224,10 @@
                 <a href="tel:0524538121">
                     לחצו כאן להתקשרות 📞
                     <span class="arabic">اضغط هنا للاتصال</span>
-                </a>
+                <a href="https://wa.me/972524538121" class="action-button">
+					<i class="fa fa-whatsapp"></i> להודעה בוואטסאפ
+					<span class="arabic">إرسال رسالة</span>
+				</a>
             </div>
         </section>
 
